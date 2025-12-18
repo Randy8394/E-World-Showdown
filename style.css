@@ -1,0 +1,919 @@
+@import url('https://fonts/googleapis.com/css2?family=Poppins&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+}
+
+body{
+    background: #013200;
+}
+
+::-webkit-scrollbar{
+    width: 12px;
+}
+
+::-webkit-scrollbar-thumb{
+    background: #cd7f32;
+    border-radius: 6px;
+}
+
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 7px 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #ffd700;
+    transition: 0.5s;
+    z-index: 1000;
+}
+
+header .sticky{
+    background: #013200;
+    box-shadow: 0 5px 20px rgba(75, 74, 20, 0.9);
+}
+
+header .logo{
+    position: relative;
+    color: #013200;
+    text-decoration: none;
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+header .nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header ul li{
+    list-style: none;
+    margin: 10px;
+}
+
+header ul li a{
+    color: #013200;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+header ul li a:hover{
+    background: #cd7f32;
+    color: black;
+    box-shadow: 0 0 10px #cd7f32;
+}
+
+header .action .searchBx{
+    padding: 5px;
+    margin: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #fff;
+    border-radius: 5px;
+}
+
+header .action .searchBx i{
+    font: 1.4rem;
+    margin: 5px;
+    color: #222;
+}
+
+header .action .searchBx input{
+    outline: none;
+    border: none;
+    font-size: 1em;
+    color: #222;
+}
+
+
+/*Cover Photo*/
+
+.cover-image{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 80px;
+    padding: 20px;
+}
+
+/*Home banner*/
+
+.banner{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    padding: 0px 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner .bg{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner .bg .content{
+    width: 50%;
+    height: 100%;
+}
+
+.banner .bg .content h2{
+    font-size: 3rem;
+    color: #ffd700;
+    letter-spacing: 1px;
+}
+
+.banner .bg .content p{
+    font-size: 1rem;
+    color: #cd7f32;
+    letter-spacing: 1px;
+}
+
+.banner .bg .content a{
+    display: inline-block;
+    padding: 10px 20px;
+    border: 1px solid #ffd700;
+    text-decoration: none;
+    font-weight: 700;
+    border-radius: 5px;
+    color: #fff;
+    letter-spacing: 1px;
+    margin-top: 10px;
+}
+
+.banner .bg .content a:hover{
+    background: #ffd700;
+    border: none;
+    color: #fff;
+}
+
+.banner .bg .content a:hover{
+    background: #ffd700;
+    border: none;
+    color: #013200;
+    box-shadow: 0 0 10px #ffd7 00;
+}
+
+.banner .bg img{
+    width: 400px;
+}
+
+/* about */
+.about{
+    position: relative;
+    width: 100%;
+    min-height: 75vh;
+    padding: 0px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.about .contentBx{
+    width: 50%;
+    margin: 20px;
+}
+
+.about .contentBx h2{
+    font-size: 3rem;
+    font-weight: 700;
+    color: #ffd700;
+}
+
+.about .contentBx p{
+    max-width: 800px;
+    text-align: justify;
+    color: #cd7f32;
+}
+
+.about .contentBx a{
+    display: inline-block;
+    padding: 10px 20px;
+    border: 1px solid #ffd700;
+    text-decoration: none;
+    font-weight: 700;
+    border-radius: 5px;
+    color: #fff;
+    letter-spacing: 1px;
+    margin-top: 10px;
+}
+
+.about .contentBx a:hover{
+    background: #ffd700;
+    border: none;
+    color: #013200;
+    box-shadow: 0 0 10px #ffd700;
+}
+
+/* center the about section image and make it responsive */
+.about .contentBx img{
+    display: block;
+    margin: 18px auto;
+    max-width: 90%;
+    height: auto;
+}
+
+/* Market */
+
+.accounts{
+    padding: 0px 100px;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 40px auto;
+}
+
+.accounts h2{
+    color: #cd7f32;
+    margin: 10px 0;
+}
+
+.accounts ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+
+.accounts ul li{
+    list-style: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin: 5px;
+    letter-spacing: 1px;
+    cursor: pointer;
+    color: #fff;
+}
+
+.accounts ul li.active{
+    background: #ffd700;
+    color: #000;
+    box-shadow: 0 0 10px #ffd700;
+}
+
+.accounts .cardBx{
+    width: 100%;
+    min-height: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.accounts .cardBx .card{
+    width: 60 0px;
+    border-radius: 10px;
+    margin: 20px 40px;
+    background: #ffd700;
+    overflow: hidden;
+}
+
+.accounts .cardBx .card img{
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+
+.accounts .cardBx .card .content h4{
+    color: #000;
+    margin: 15px 0;
+    padding: 10px;
+    font-weight: 800;
+}
+
+.accounts .cardBx .card .progress-line{
+    position: relative;
+    height: 10px;
+    width: 90%;
+    background: #cd7f32;
+    margin-left: 25px;
+    margin-bottom: 15px;
+    border-radius: 10px;
+    transform: scaleX(0);
+    transform-origin: left;
+    animation: animate 1s cubic-bezier(1,0,0.5,1) forwards;
+}
+
+.accounts .cardBx .card .progress-line span{
+    position: absolute;
+    height: 100%;
+    width: 80%;
+    border-radius: 10px;
+    background: #013200;
+    box-shadow: 0 0 10px #013200;
+     transform: scaleX(0);
+    transform-origin: left;
+    animation: animate 1s cubic-bezier(1,0,0.5,1) forwards;
+}
+
+@keyframes animate{
+    100%{
+         transform: scaleX(1);
+    }
+}
+
+.accounts .cardBx .card .info{
+    border-top: 2px solid #cd7f32;
+    margin-left: 25px;
+    margin-right: 25px;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+}
+
+.accounts .cardBx .card .info p{
+    font-size: 1rem;
+    color: #000;
+}
+
+.accounts .cardBx .card .info p span{
+    color: #000;
+}
+
+.accounts .cardBx .card .info a{
+    display: inline-block;
+    padding: 10px 20px;
+    border: 1px solid #013200;
+    text-decoration: none;
+    font-weight: 700;
+    border-radius: 5px;
+    color: #013200;
+    letter-spacing: 1px;
+    margin-top: 10px;
+    margin-left: 60%;
+}
+
+.accounts .cardBx .card .info a:hover{
+    background: #013200;
+    border: none;
+    color: #ffd700;
+    box-shadow: 0 0 10px #013200;;
+}
+
+/* utility class used by JS to hide cards */
+.hide{ display: none !important; }
+
+.tournaments{
+    padding: 0px;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.tournaments h2{
+    color: #cd7f32;
+    margin: 10px 0;
+}
+
+.tournaments .boxBx{
+    width: 100%;
+    min-height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.tournaments .boxBx .box{
+    width: 350px;
+    border-radius: 10px;
+    margin: 20px 40px;
+    background: #ffd700;
+    overflow: hidden;
+}
+.tournaments .boxBx .box img{
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+}
+
+.tournaments .boxBx .box .content{
+    padding: 10px;
+}
+
+.tournaments .boxBx .box .content h4{
+    color: #000;
+    margin-top: 15px;
+}
+
+.tournaments .boxBx .box .content h4 span{
+    color: #013200;
+}
+
+.tournaments .boxBx .box .content p{
+    text-align: justify;
+    color: #000;
+    margin-top: 10px;
+
+}
+
+.tournaments .boxBx .box .content .btn{
+display: flex;
+justify-content: space-between;
+}
+
+.tournaments .boxBx .box .content .watch{
+    display: inline-block;
+    border: 1px solid #013200;
+    padding: 10px 20px;
+    margin: 20px 0;
+    background: #ffd700;
+    text-decoration: none;
+    font-weight: 700;
+    border-radius: 5px;
+    color: #013200;
+    letter-spacing: 1px;
+    box-shadow: 0 0 10px #ffd700;
+}
+
+.tournaments .boxBx .box .content .watch:hover{
+    background: #013200;
+    color: #ffd700;
+    box-shadow: none;
+    box-shadow: 0 0 10px #013200;
+}
+
+.tournaments .boxBx .box .content .join{
+    display: inline-block;
+    border: 1px solid #013200;
+    padding: 10px 20px;
+    margin: 20px 0;
+    background: #ffd700;
+    text-decoration: none;
+    font-weight: 700;
+    border-radius: 5px;
+    color: #013200;
+    letter-spacing: 1px;
+    box-shadow: 0 0 10px #ffd700;
+}
+
+.tournaments .boxBx .box .content .join:hover{
+    background: #013200;
+    color: #ffd700;
+    box-shadow: none;
+    box-shadow: 0 0 10px #013200;
+}
+
+/* contact */
+
+.contact {
+    padding: 120px 10% 80px;
+    position: relative;
+    animation: show-content 1s linear forwards;
+    animation-delay: 1.6s;
+}
+
+.contact-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.contact h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.contact h1 span {
+    color: #ffd700
+}
+
+.contact h3 {
+    font-size: 1.5rem;
+    color: #ffd700;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.contact-content {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.contact-info {
+    flex: 1;
+    max-width: 400px;
+}
+
+.info-box {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 30px;
+    background: rgba(255, 255, 255, 0.05);
+    padding: 20px;
+    border-radius: 10px;
+    transition: all 0.3s;
+}
+
+.info-box:hover {
+    transform: translateY(-5px);
+    background: rgba(18, 207, 90, 0.1);
+    box-shadow: 0 5px 15px rgba(18, 207, 90, 0.1);
+}
+
+.info-box i {
+    font-size: 24px;
+    color: #ffd700;
+    margin-right: 20px;
+    margin-top: 5px;
+}
+
+.info-box .text h4 {
+    font-size: 1.2rem;
+    margin-bottom: 5px;
+}
+
+.info-box .text p {
+    color: #cd7f32;
+    font-size: 0.9rem;
+}
+
+.social-links {
+    margin-top: 40px;
+}
+
+.social-links h4 {
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+}
+
+.social-links .links {
+    display: flex;
+    gap: 15px;
+}
+
+.social-links .links a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background: transparent;
+    border: 2px solid #ffd700;
+    border-radius: 50%;
+    color: #ffd700;
+    font-size: 20px;
+    transition: all 0.3s;
+}
+
+.social-links .links a:hover {
+    background: #ffd700;
+    color: #0a192f;
+    transform: translateY(-3px);
+    box-shadow: 0 0 15px rgba(236, 221, 10, 0.863);
+}
+
+.contact-form {
+    flex: 1;
+    max-width: 600px;
+    background: rgba(255, 255, 255, 0.05);
+    padding: 30px;
+    border-radius: 10px;
+    transition: all 0.3s;
+}
+
+.contact-form:hover {
+    box-shadow: 0 10px 30px rgba(18, 207, 90, 0.1);
+}
+
+.input-box {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.input-box input {
+    flex: 1;
+    padding: 12px 15px;
+    background: rgba(255, 255, 255, 0.02);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 5px;
+    color: #ffd700;
+    font-size: 16px;
+    transition: all 0.3s;
+}
+
+.input-box input::placeholder {
+    color: rgba(168, 178, 209, 0.6);
+}
+
+.input-box input:focus {
+    border-color: #ffd700;
+    background: rgba(18, 207, 90, 0.05);
+    box-shadow: 0 0 10px rgba(18, 207, 90, 0.3);
+    outline: none;
+}
+
+textarea {
+    width: 100%;
+    padding: 12px 15px;
+    background: rgba(255, 255, 255, 0.02);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 5px;
+    color: #ffd700;
+    font-size: 16px;
+    resize: vertical;
+    min-height: 150px;
+    margin-bottom: 20px;
+    transition: all 0.3s;
+}
+
+textarea::placeholder {
+    color: rgba(168, 178, 209, 0.6);
+}
+
+textarea:focus {
+    border-color: #ffd700;
+    background: rgba(18, 207, 90, 0.05);
+    box-shadow: 0 0 10px rgba(18, 207, 90, 0.3);
+    outline: none;
+}
+
+.contact-form .btn {
+    width: 100%;
+    padding: 12px;
+    background: #013200;
+    border: 1px solid #ffd700;
+    color: #ffd700;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.contact-form .btn:hover {
+    background: #ffd700;
+    border: none;
+    color: #013200;
+    box-shadow: 0 0 10px #ffd700;
+    transform: translateY(-2px);
+}
+
+/* Footer */
+
+footer {
+    padding: 10px 100px;    
+}
+
+footer .info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 40%;
+    padding-left: 40%;
+}
+
+footer .info .logo {
+    color: #ffd700;
+    position: relative;
+    text-decoration: none;
+    font-size: 2rem;
+    font-weight: 700;
+    margin-right: 20px;
+}   
+
+footer .info p {
+    color: #cd7f32;
+}   
+
+
+.animeX{
+    position: relative;
+    transform: translateY(150px);
+    opacity: 0;
+    transition: all 2s ease;
+}
+
+.animeX.active{
+    transform: translateY(0px);
+    opacity: 1;
+}
+
+
+/* Responsive Design */
+
+@media (max-width: 991px)
+{
+    header{
+        padding: 15px 40px;
+    }
+
+    header .nav{
+        position: fixed;
+        top: 0px;
+        left: 0px;
+        right: 0px;
+        bottom: 0px;
+        background: #ffd700;
+        display: none;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        z-index: 1001;
+    }
+
+    /* show the nav when the nav element itself has the active class */
+    header .nav.active{
+        display: flex;
+    }
+
+    header .nav li{
+        margin: 20px 0;
+    }
+
+    header .nav li a{
+        font-size: 24px;
+        margin: 10px 0;
+    }
+
+    .toggleMenu{
+        position : relative;
+        width: 30px;
+        height: 30px;
+        background: url(images/menu.png);
+        background-position: center;
+        background-size: 45px;
+        background-repeat: no-repeat;
+        cursor: pointer;
+        z-index: 10001;
+    }
+
+    /* when the toggle element itself has .active, switch the background */
+    .toggleMenu.active{
+        background: url(images/close.png);
+        background-position: center;
+        background-size: 30px;
+        background-repeat: no-repeat;
+    }
+
+    .banner .bg img{
+        position: absolute;
+    }
+
+    .banner .bg .content{
+        width: 100%;
+        height: 100%;
+        background: rgb(0 0 0 / 50%);
+        flex-direction: column;
+        padding: 20px;
+        z-index: 1;
+        border-radius: 10px;
+    }
+
+    .about{
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+    }
+
+    .about .contentBx{
+        width: 100%;
+
+    }
+
+    .contact{
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+/* Small screens: phones narrower than 400px */
+@media screen and (max-width: 400px) {
+    /* prevent horizontal scroll caused by wide elements */
+    html, body {
+        overflow-x: hidden;
+        font-size: 14px;
+    }
+
+    header{
+        padding: 10px 14px;
+    }
+
+    header .logo{
+        font-size: 1.4rem;
+    }
+
+    /* Tweak toggle/menu sizing and keep it visible */
+    .toggleMenu{
+        width: 28px;
+        height: 28px;
+        background-size: 28px;
+        z-index: 10002;
+    }
+
+    header .nav{
+        top: 56px;
+        padding: 8px 16px;
+    }
+
+    header .nav li a{
+        font-size: 18px;
+        padding: 10px 6px;
+    }
+
+    .banner{
+        padding: 0 12px;
+        min-height: auto;
+    }
+
+    /* make banner image behave responsively on very small screens */
+    .banner .bg img{
+        position: relative;
+        width: 100%;
+        height: auto;
+        max-height: 220px;
+        object-fit: cover;
+    }
+
+    .banner .bg .content{
+        width: 100%;
+        padding: 12px;
+    }
+
+    /* General section padding reductions */
+    .about, .accounts, .tournaments, .contact, footer{
+        padding: 12px;
+    }
+
+    /* Cards and boxes become full width and stack */
+    .about .contentBx,
+    .accounts .cardBx .card,
+    .tournaments .boxBx .box{
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    .accounts .cardBx .card{
+        border-radius: 8px;
+        margin: 10px 0;
+    }
+
+    .accounts .cardBx .card img,
+    .tournaments .boxBx .box img{
+        height: auto;
+        max-height: 220px;
+        width: 100%;
+    }
+
+    .accounts ul{
+        gap: 6px;
+        flex-wrap: wrap;
+    }
+
+    /* Contact area stacks and inputs grow to full width */
+    .contact-content{
+        flex-direction: column;
+        gap: 18px;
+    }
+
+    .contact-form, .contact-info{
+        max-width: 100%;
+        width: 100%;
+    }
+
+    .input-box{
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .input-box input, textarea{
+        font-size: 14px;
+    }
+
+    footer .info{
+        flex-direction: column;
+        padding: 0;
+    }
+
+    /* make entrance animations subtler on small screens */
+    .animeX{
+        transform: translateY(40px);
+    }
+
+    .animeX.active{
+        transform: translateY(0);
+    }
+}
