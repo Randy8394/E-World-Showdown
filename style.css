@@ -8,7 +8,7 @@
 }
 
 body{
-    background: #013200;
+    background: #000080;
 }
 
 ::-webkit-scrollbar{
@@ -35,13 +35,13 @@ header{
 }
 
 header .sticky{
-    background: #013200;
+    background: #000080;
     box-shadow: 0 5px 20px rgba(75, 74, 20, 0.9);
 }
 
 header .logo{
     position: relative;
-    color: #013200;
+    color: #000080;
     text-decoration: none;
     font-size: 2rem;
     font-weight: 700;
@@ -59,7 +59,7 @@ header ul li{
 }
 
 header ul li a{
-    color: #013200;
+    color: #000080;
     text-decoration: none;
     padding: 10px 20px;
     border-radius: 5px;
@@ -165,7 +165,7 @@ header .action .searchBx input{
 .banner .bg .content a:hover{
     background: #ffd700;
     border: none;
-    color: #013200;
+    color: #000080;
     box-shadow: 0 0 10px #ffd7 00;
 }
 
@@ -216,7 +216,7 @@ header .action .searchBx input{
 .about .contentBx a:hover{
     background: #ffd700;
     border: none;
-    color: #013200;
+    color: #000080;
     box-shadow: 0 0 10px #ffd700;
 }
 
@@ -227,6 +227,155 @@ header .action .searchBx input{
     max-width: 90%;
     height: auto;
 }
+
+
+/* Tournaments */
+
+.tournaments{
+    padding: 0px;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.tournaments h2{
+    color: #cd7f32;
+    margin: 10px 0;
+}
+
+.tournaments .boxBx{
+    width: 100%;
+    min-height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.tournaments .boxBx .box{
+    width: 350px;
+    border-radius: 10px;
+    margin: 20px 40px;
+    background: #ffd700;
+    overflow: hidden;
+}
+.tournaments .boxBx .box img{
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+}
+
+.tournaments .boxBx .box .content{
+    padding: 10px;
+}
+
+.tournaments .boxBx .box .content h4{
+    color: #000;
+    margin-top: 15px;
+}
+
+.tournaments .boxBx .box .content h4 span{
+    color: #000080;
+}
+
+.tournaments .boxBx .box .content p{
+    text-align: justify;
+    color: #000;
+    margin-top: 10px;
+
+}
+
+.tournaments .boxBx .box .content .btn{
+display: flex;
+justify-content: space-between;
+}
+
+.tournaments .boxBx .box .content .watch{
+    display: inline-block;
+    border: 1px solid #000080;
+    padding: 10px 20px;
+    margin: 20px 0;
+    background: #ffd700;
+    text-decoration: none;
+    font-weight: 700;
+    border-radius: 5px;
+    color: #000080;
+    letter-spacing: 1px;
+    box-shadow: 0 0 10px #ffd700;
+}
+
+.tournaments .boxBx .box .content .watch:hover{
+    background: #000080;
+    color: #ffd700;
+    box-shadow: none;
+    box-shadow: 0 0 10px #013200;
+}
+
+.tournaments .boxBx .box .content .join{
+    display: inline-block;
+    border: 1px solid #000080;
+    padding: 10px 20px;
+    margin: 20px 0;
+    background: #ffd700;
+    text-decoration: none;
+    font-weight: 700;
+    border-radius: 5px;
+    color: #000080;
+    letter-spacing: 1px;
+    box-shadow: 0 0 10px #ffd700;
+}
+
+.tournaments .boxBx .box .content .join:hover{
+    background: #000080;
+    color: #ffd700;
+    box-shadow: none;
+    box-shadow: 0 0 10px #000080;
+}
+
+/* Live Tournament Updates */
+
+.categories
+{
+    margin: 70px 0;
+}
+
+.categories h2{
+    color: #cd7f32;
+    margin: 10px 0;
+    text-align: center;
+}
+
+.small-container
+{
+    max-width: 1080px;
+    margin: auto;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+.row
+{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.col-0
+{
+    flex-basis: 30%;
+    min-width: 250px;
+    margin-bottom: 30px;
+}
+
+.col-0 img
+{
+    width: 100%;
+    height: 100%;
+}
+
 
 /* Market */
 
@@ -318,8 +467,8 @@ header .action .searchBx input{
     height: 100%;
     width: 80%;
     border-radius: 10px;
-    background: #013200;
-    box-shadow: 0 0 10px #013200;
+    background: #000080;
+    box-shadow: 0 0 10px #4169e1;
      transform: scaleX(0);
     transform-origin: left;
     animation: animate 1s cubic-bezier(1,0,0.5,1) forwards;
@@ -352,128 +501,26 @@ header .action .searchBx input{
 .accounts .cardBx .card .info a{
     display: inline-block;
     padding: 10px 20px;
-    border: 1px solid #013200;
+    border: 1px solid #000080;
     text-decoration: none;
     font-weight: 700;
     border-radius: 5px;
-    color: #013200;
+    color: #000080;
     letter-spacing: 1px;
     margin-top: 10px;
     margin-left: 60%;
 }
 
 .accounts .cardBx .card .info a:hover{
-    background: #013200;
+    background: #000080;
     border: none;
     color: #ffd700;
-    box-shadow: 0 0 10px #013200;;
+    box-shadow: 0 0 10px #000080;;
 }
 
 /* utility class used by JS to hide cards */
 .hide{ display: none !important; }
 
-.tournaments{
-    padding: 0px;
-    width: 100%;
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-.tournaments h2{
-    color: #cd7f32;
-    margin: 10px 0;
-}
-
-.tournaments .boxBx{
-    width: 100%;
-    min-height: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-}
-.tournaments .boxBx .box{
-    width: 350px;
-    border-radius: 10px;
-    margin: 20px 40px;
-    background: #ffd700;
-    overflow: hidden;
-}
-.tournaments .boxBx .box img{
-    width: 100%;
-    height: 350px;
-    object-fit: cover;
-}
-
-.tournaments .boxBx .box .content{
-    padding: 10px;
-}
-
-.tournaments .boxBx .box .content h4{
-    color: #000;
-    margin-top: 15px;
-}
-
-.tournaments .boxBx .box .content h4 span{
-    color: #013200;
-}
-
-.tournaments .boxBx .box .content p{
-    text-align: justify;
-    color: #000;
-    margin-top: 10px;
-
-}
-
-.tournaments .boxBx .box .content .btn{
-display: flex;
-justify-content: space-between;
-}
-
-.tournaments .boxBx .box .content .watch{
-    display: inline-block;
-    border: 1px solid #013200;
-    padding: 10px 20px;
-    margin: 20px 0;
-    background: #ffd700;
-    text-decoration: none;
-    font-weight: 700;
-    border-radius: 5px;
-    color: #013200;
-    letter-spacing: 1px;
-    box-shadow: 0 0 10px #ffd700;
-}
-
-.tournaments .boxBx .box .content .watch:hover{
-    background: #013200;
-    color: #ffd700;
-    box-shadow: none;
-    box-shadow: 0 0 10px #013200;
-}
-
-.tournaments .boxBx .box .content .join{
-    display: inline-block;
-    border: 1px solid #013200;
-    padding: 10px 20px;
-    margin: 20px 0;
-    background: #ffd700;
-    text-decoration: none;
-    font-weight: 700;
-    border-radius: 5px;
-    color: #013200;
-    letter-spacing: 1px;
-    box-shadow: 0 0 10px #ffd700;
-}
-
-.tournaments .boxBx .box .content .join:hover{
-    background: #013200;
-    color: #ffd700;
-    box-shadow: none;
-    box-shadow: 0 0 10px #013200;
-}
 
 /* contact */
 
@@ -491,6 +538,7 @@ justify-content: space-between;
 
 .contact h1 {
     font-size: 3rem;
+    color: #fff;
     margin-bottom: 10px;
     text-align: center;
 }
@@ -542,6 +590,7 @@ justify-content: space-between;
 
 .info-box .text h4 {
     font-size: 1.2rem;
+    color: #fff;
     margin-bottom: 5px;
 }
 
@@ -654,7 +703,7 @@ textarea:focus {
 .contact-form .btn {
     width: 100%;
     padding: 12px;
-    background: #013200;
+    background: #000080;
     border: 1px solid #ffd700;
     color: #ffd700;
     border-radius: 5px;
@@ -667,7 +716,7 @@ textarea:focus {
 .contact-form .btn:hover {
     background: #ffd700;
     border: none;
-    color: #013200;
+    color: #000080;
     box-shadow: 0 0 10px #ffd700;
     transform: translateY(-2px);
 }
