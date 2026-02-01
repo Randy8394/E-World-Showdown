@@ -43,7 +43,7 @@ header .logo{
     position: relative;
     color: #000080;
     text-decoration: none;
-    font-size: 2rem;
+    font-size: 10rem;
     font-weight: 700;
 }
 
@@ -59,7 +59,7 @@ header ul li{
 }
 
 header ul li a{
-    color: #000080;
+    color: #ffd700;
     text-decoration: none;
     padding: 10px 20px;
     border-radius: 5px;
@@ -606,6 +606,7 @@ justify-content: space-between;
 .social-links h4 {
     font-size: 1.2rem;
     margin-bottom: 15px;
+    color: #fff;
 }
 
 .social-links .links {
@@ -777,7 +778,7 @@ footer .info p {
         left: 0px;
         right: 0px;
         bottom: 0px;
-        background: #ffd700;
+        background: #000080;
         display: none;
         justify-content: center;
         align-items: center;
@@ -788,6 +789,10 @@ footer .info p {
     /* show the nav when the nav element itself has the active class */
     header .nav.active{
         display: flex;
+        position: right;
+        width: 50%;
+        margin-left: 50%;
+        border-radius: 10px;
     }
 
     header .nav li{
@@ -865,6 +870,15 @@ footer .info p {
     header .logo{
         font-size: 1.4rem;
     }
+
+    
+header .logo{
+    position: relative;
+    color: #000080;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 1000;
+}
 
     /* Tweak toggle/menu sizing and keep it visible */
     .toggleMenu{
