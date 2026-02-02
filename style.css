@@ -94,18 +94,6 @@ header .action .searchBx input{
     color: #222;
 }
 
-
-/*Cover Photo*/
-
-.cover-image{
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 80px;
-    padding: 20px;
-}
-
 /*Home banner*/
 
 .banner{
