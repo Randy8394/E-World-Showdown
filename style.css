@@ -55,7 +55,7 @@ header ul li{
 }
 
 header ul li a{
-    color: #ffd700;
+    color: #000080;
     text-decoration: none;
     padding: 10px 20px;
     border-radius: 5px;
@@ -787,10 +787,11 @@ footer .info p {
     header .nav li a{
         font-size: 24px;
         margin: 10px 0;
+        color: #ffd700;
     }
 
     .toggleMenu{
-        position : relative;
+        position: relative;
         width: 30px;
         height: 30px;
         background: url(images/menu.png);
@@ -803,6 +804,9 @@ footer .info p {
 
     /* when the toggle element itself has .active, switch the background */
     .toggleMenu.active{
+        width: 15px;
+        margin-right: 7px;
+        height: 15px;
         background: url(images/close.png);
         background-position: center;
         background-size: 30px;
