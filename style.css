@@ -433,7 +433,8 @@ justify-content: space-between;
     font-weight: 800;
 }
 
-.accounts .cardBx .card .progress-line{
+/*Progress Line 1*/
+.accounts .cardBx .card .progress-line-1 {
     position: relative;
     height: 10px;
     width: 90%;
@@ -446,10 +447,10 @@ justify-content: space-between;
     animation: animate 1s cubic-bezier(1,0,0.5,1) forwards;
 }
 
-.accounts .cardBx .card .progress-line span{
+.accounts .cardBx .card .progress-line-1 span{
     position: absolute;
     height: 100%;
-    width: 80%;
+    width: 95%;
     border-radius: 10px;
     background: #000080;
     box-shadow: 0 0 10px #4169e1;
@@ -457,6 +458,85 @@ justify-content: space-between;
     transform-origin: left;
     animation: animate 1s cubic-bezier(1,0,0.5,1) forwards;
 }
+
+/*Progress Line 2*/
+.accounts .cardBx .card .progress-line-2 {
+    position: relative;
+    height: 10px;
+    width: 90%;
+    background: #cd7f32;
+    margin-left: 25px;
+    margin-bottom: 15px;
+    border-radius: 10px;
+    transform: scaleX(0);
+    transform-origin: left;
+    animation: animate 1s cubic-bezier(1,0,0.5,1) forwards;
+}
+
+.accounts .cardBx .card .progress-line-2 span{
+    position: absolute;
+    height: 100%;
+    width: 70%;
+    border-radius: 10px;
+    background: #000080;
+    box-shadow: 0 0 10px #4169e1;
+     transform: scaleX(0);
+    transform-origin: left;
+    animation: animate 1s cubic-bezier(1,0,0.5,1) forwards;
+}
+
+/*Progress Line 3*/
+.accounts .cardBx .card .progress-line-3 {
+    position: relative;
+    height: 10px;
+    width: 90%;
+    background: #cd7f32;
+    margin-left: 25px;
+    margin-bottom: 15px;
+    border-radius: 10px;
+    transform: scaleX(0);
+    transform-origin: left;
+    animation: animate 1s cubic-bezier(1,0,0.5,1) forwards;
+}
+
+.accounts .cardBx .card .progress-line-3 span{
+    position: absolute;
+    height: 100%;
+    width: 55%;
+    border-radius: 10px;
+    background: #000080;
+    box-shadow: 0 0 10px #4169e1;
+     transform: scaleX(0);
+    transform-origin: left;
+    animation: animate 1s cubic-bezier(1,0,0.5,1) forwards;
+}
+
+/*Progress Line 4*/
+.accounts .cardBx .card .progress-line-4 {
+    position: relative;
+    height: 10px;
+    width: 90%;
+    background: #cd7f32;
+    margin-left: 25px;
+    margin-bottom: 15px;
+    border-radius: 10px;
+    transform: scaleX(0);
+    transform-origin: left;
+    animation: animate 1s cubic-bezier(1,0,0.5,1) forwards;
+}
+
+.accounts .cardBx .card .progress-line-4 span{
+    position: absolute;
+    height: 100%;
+    width: 25%;
+    border-radius: 10px;
+    background: #000080;
+    box-shadow: 0 0 10px #4169e1;
+     transform: scaleX(0);
+    transform-origin: left;
+    animation: animate 1s cubic-bezier(1,0,0.5,1) forwards;
+}
+
 
 @keyframes animate{
     100%{
