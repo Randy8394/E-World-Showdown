@@ -11,6 +11,11 @@
         <script src="script.js"></script>
     </head>
     <body>
+        <div class="video-background">
+            <video autoplay muted loop playsinline class="page-bg-video">
+                <source src="images/vid-bg.mp4" type="video/mp4">
+            </video>
+        </div>
         <header>
             <a href="#" class="logo"><img src="images/logo.png" width="50px"></a>
             <ul class="nav">
@@ -110,7 +115,7 @@
 
         <div class="small-container">
             <div class="row">
-                <div class="col-0">
+                <div class="col-0 calendar-scroll">
                     <img src="images/tournaments/Calender/February.jpg">
                     <img src="images/tournaments/Calender/March.jpg">
                     <img src="images/tournaments/Calender/April.jpg">
@@ -123,14 +128,20 @@
         <h2>Tournament Stats</h2> <br>
 
         <div class="small-container">
-            <div class="row">
+            <div class="row league-container">
                 <div class="col-0">
                     <h2>E-World League Cup</h2>
-                    <img src="images/tournaments/tournament stats/League Cup Fixtures 1 & 2.jpg">
-                    <img src="images/tournaments/tournament stats/League Cup Fixtures 3 & 4.jpg">
-                    <img src="images/tournaments/tournament stats/League.jpg">
+                    <div class="league-scroll">
+                        <img src="images/tournaments/tournament stats/League Cup Fixtures 1 & 2.jpg">
+                        <img src="images/tournaments/tournament stats/League Cup Fixtures 3 & 4.jpg">
+                        <img src="images/tournaments/tournament stats/League.jpg">
+                    </div>
                 </div>
+            </div>
+        </div>
 
+        <div class="small-container">
+            <div class="row">
                 <div class="col-0">
                     <h2>Co-op Showdown</h2>
                     <img src="images/tournaments/tournament stats/E-World Co-op.jpg">
@@ -138,10 +149,12 @@
 
                 <div class="col-0">
                     <h2>Champions League Showdown</h2>
-                    <img src="images/tournaments/tournament stats/ECL Group Fixtures.jpg">
-                    <img src="images/tournaments/tournament stats/ECL Group Fixtures.jpg">
-                    <img src="images/tournaments/tournament stats/ECL Group Fixtures.jpg">
-                    <img src="images/tournaments/tournament stats/ECL Knockout Fixtures.jpg">
+                    <div class="ecl-scroll">
+                        <img src="images/tournaments/tournament stats/ECL Group Fixtures.jpg">
+                        <img src="images/tournaments/tournament stats/ECL Group Fixtures.jpg">
+                        <img src="images/tournaments/tournament stats/ECL Group Fixtures.jpg">
+                        <img src="images/tournaments/tournament stats/ECL Knockout Fixtures.jpg">
+                    </div>
                 </div>
             </div>
         </div>
@@ -150,7 +163,7 @@
     </div>
 
 
-<!--Markets-->
+<!--Markets-1-->
 
     <div class="accounts animeX" id="market">
         <h2>Accounts Sale</h2>
@@ -159,6 +172,308 @@
             <li class="list" data-filter = "Sale">Sale</li>
             <li class="list" data-filter = "Swap">Swap</li>
         </ul>
+        <div class="cardBx">
+            
+            <div class="card" data-item="Swap">
+                <img src="images/markets/1.jpg" width="600px">
+                <div class="content">
+                    <h4>Swap Available</h4>
+                    <div class="progress-line-1"><span></span></div>
+                    <div class="info">
+                        <p>Pricing:<br><span>Money Addition</span></p>
+                        <a href="https://whatsapp.com/channel/0029VbCB0adKbYMG4akkZO3T">Buy Now</a>
+                    </div>
+                </div>
+            </div>
+
+             <div class="card" data-item="Sale">
+                <img src="images/markets/3.jpg" width="600px">
+                <div class="content">
+                    <h4>Beast ID Available</h4>
+                    <div class="progress-line-1"><span></span></div>
+                    <div class="info">
+                        <p>Pricing:<br><span>Ghc 1000.00</span></p>
+                        <a href="https://whatsapp.com/channel/0029VbCB0adKbYMG4akkZO3T">Buy Now</a>
+                    </div>
+                </div>
+            </div>
+
+             <div class="card" data-item="Sale">
+                <img src="images/markets/4.jpg" width="600px">
+                <div class="content">
+                    <h4>Small ID Available</h4>
+                    <div class="progress-line-2"><span></span></div>
+                    <div class="info">
+                        <p>Pricing:<br><span>Ghc 180.00</span></p>
+                        <a href="https://whatsapp.com/channel/0029VbCB0adKbYMG4akkZO3T">Buy Now</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card" data-item="Swap">
+                <img src="images/markets/5.jpg" width="600px">
+                <div class="content">
+                    <h4>Exchange Available</h4>
+                    <div class="progress-line-4"><span></span></div>
+                    <div class="info">
+                        <p>Pricing:<br><span>Money Addition</span></p>
+                        <a href="https://whatsapp.com/channel/0029VbCB0adKbYMG4akkZO3T">Buy Now</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card" data-item="Swap">
+                <img src="images/markets/6.jpg" width="600px">
+                <div class="content">
+                    <h4>Exchange Available</h4>
+                    <div class="progress-line-3"><span></span></div>
+                    <div class="info">
+                        <p>Pricing:<br><span>Money Addition</span></p>
+                        <a href="https://whatsapp.com/channel/0029VbCB0adKbYMG4akkZO3T">Buy Now</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card" data-item="Sale">
+                <img src="images/markets/7.jpg" width="600px">
+                <div class="content">
+                    <h4>Mid ID Available</h4>
+                    <div class="progress-line-3"><span></span></div>
+                    <div class="info">
+                        <p>Pricing:<br><span>Ghc 270.00</span></p>
+                        <a href="https://whatsapp.com/channel/0029VbCB0adKbYMG4akkZO3T">Buy Now</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card" data-item="Sale">
+                <img src="images/markets/8.jpg" width="600px">
+                <div class="content">
+                    <h4>Beast ID Available</h4>
+                    <div class="progress-line-3"><span></span></div>
+                    <div class="info">
+                        <p>Pricing:<br><span>----</span></p>
+                        <a href="https://whatsapp.com/channel/0029VbCB0adKbYMG4akkZO3T">Buy Now</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card" data-item="Sale">
+                <img src="images/markets/9.jpg" width="600px">
+                <div class="content">
+                    <h4>Mid ID Available</h4>
+                    <div class="progress-line-3"><span></span></div>
+                    <div class="info">
+                        <p>Pricing:<br><span>Ghc 200.00</span></p>
+                        <a href="https://whatsapp.com/channel/0029VbCB0adKbYMG4akkZO3T">Buy Now</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card" data-item="Sale">
+                <img src="images/markets/10.jpg" width="600px">
+                <div class="content">
+                    <h4>Small ID Available</h4>
+                    <div class="progress-line-4"><span></span></div>
+                    <div class="info">
+                        <p>Pricing:<br><span>Ghc 180.00</span></p>
+                        <a href="https://whatsapp.com/channel/0029VbCB0adKbYMG4akkZO3T">Buy Now</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card" data-item="Sale">
+                <img src="images/markets/11.jpg" width="600px">
+                <div class="content">
+                    <h4>Beast ID Available</h4>
+                    <div class="progress-line-3"><span></span></div>
+                    <div class="info">
+                        <p>Pricing:<br><span>Ghc 1200.00</span></p>
+                        <a href="https://whatsapp.com/channel/0029VbCB0adKbYMG4akkZO3T">Buy Now</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card" data-item="Sale">
+                <img src="images/markets/12.jpg" width="600px">
+                <div class="content">
+                    <h4>Mid ID Available</h4>
+                    <div class="progress-line-4"><span></span></div>
+                    <div class="info">
+                        <p>Pricing:<br><span>Ghc 250.00</span></p>
+                        <a href="https://whatsapp.com/channel/0029VbCB0adKbYMG4akkZO3T">Buy Now</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card" data-item="Sale">
+                <img src="images/markets/15.jpg" width="600px">
+                <div class="content">
+                    <h4>Beast ID Available</h4>
+                    <div class="progress-line-4"><span></span></div>
+                    <div class="info">
+                        <p>Pricing:<br><span>Ghc 560.00</span></p>
+                        <a href="https://whatsapp.com/channel/0029VbCB0adKbYMG4akkZO3T">Buy Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--Markets-2-->
+
+    <div class="accounts" id="market">
+        <div class="cardBx">
+            
+            <div class="card" data-item="Swap">
+                <img src="images/markets/1.jpg" width="600px">
+                <div class="content">
+                    <h4>Swap Available</h4>
+                    <div class="progress-line-1"><span></span></div>
+                    <div class="info">
+                        <p>Pricing:<br><span>Money Addition</span></p>
+                        <a href="https://whatsapp.com/channel/0029VbCB0adKbYMG4akkZO3T">Buy Now</a>
+                    </div>
+                </div>
+            </div>
+
+             <div class="card" data-item="Sale">
+                <img src="images/markets/3.jpg" width="600px">
+                <div class="content">
+                    <h4>Beast ID Available</h4>
+                    <div class="progress-line-1"><span></span></div>
+                    <div class="info">
+                        <p>Pricing:<br><span>Ghc 1000.00</span></p>
+                        <a href="https://whatsapp.com/channel/0029VbCB0adKbYMG4akkZO3T">Buy Now</a>
+                    </div>
+                </div>
+            </div>
+
+             <div class="card" data-item="Sale">
+                <img src="images/markets/4.jpg" width="600px">
+                <div class="content">
+                    <h4>Small ID Available</h4>
+                    <div class="progress-line-2"><span></span></div>
+                    <div class="info">
+                        <p>Pricing:<br><span>Ghc 180.00</span></p>
+                        <a href="https://whatsapp.com/channel/0029VbCB0adKbYMG4akkZO3T">Buy Now</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card" data-item="Swap">
+                <img src="images/markets/5.jpg" width="600px">
+                <div class="content">
+                    <h4>Exchange Available</h4>
+                    <div class="progress-line-4"><span></span></div>
+                    <div class="info">
+                        <p>Pricing:<br><span>Money Addition</span></p>
+                        <a href="https://whatsapp.com/channel/0029VbCB0adKbYMG4akkZO3T">Buy Now</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card" data-item="Swap">
+                <img src="images/markets/6.jpg" width="600px">
+                <div class="content">
+                    <h4>Exchange Available</h4>
+                    <div class="progress-line-3"><span></span></div>
+                    <div class="info">
+                        <p>Pricing:<br><span>Money Addition</span></p>
+                        <a href="https://whatsapp.com/channel/0029VbCB0adKbYMG4akkZO3T">Buy Now</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card" data-item="Sale">
+                <img src="images/markets/7.jpg" width="600px">
+                <div class="content">
+                    <h4>Mid ID Available</h4>
+                    <div class="progress-line-3"><span></span></div>
+                    <div class="info">
+                        <p>Pricing:<br><span>Ghc 270.00</span></p>
+                        <a href="https://whatsapp.com/channel/0029VbCB0adKbYMG4akkZO3T">Buy Now</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card" data-item="Sale">
+                <img src="images/markets/8.jpg" width="600px">
+                <div class="content">
+                    <h4>Beast ID Available</h4>
+                    <div class="progress-line-3"><span></span></div>
+                    <div class="info">
+                        <p>Pricing:<br><span>----</span></p>
+                        <a href="https://whatsapp.com/channel/0029VbCB0adKbYMG4akkZO3T">Buy Now</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card" data-item="Sale">
+                <img src="images/markets/9.jpg" width="600px">
+                <div class="content">
+                    <h4>Mid ID Available</h4>
+                    <div class="progress-line-3"><span></span></div>
+                    <div class="info">
+                        <p>Pricing:<br><span>Ghc 200.00</span></p>
+                        <a href="https://whatsapp.com/channel/0029VbCB0adKbYMG4akkZO3T">Buy Now</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card" data-item="Sale">
+                <img src="images/markets/10.jpg" width="600px">
+                <div class="content">
+                    <h4>Small ID Available</h4>
+                    <div class="progress-line-4"><span></span></div>
+                    <div class="info">
+                        <p>Pricing:<br><span>Ghc 180.00</span></p>
+                        <a href="https://whatsapp.com/channel/0029VbCB0adKbYMG4akkZO3T">Buy Now</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card" data-item="Sale">
+                <img src="images/markets/11.jpg" width="600px">
+                <div class="content">
+                    <h4>Beast ID Available</h4>
+                    <div class="progress-line-3"><span></span></div>
+                    <div class="info">
+                        <p>Pricing:<br><span>Ghc 1200.00</span></p>
+                        <a href="https://whatsapp.com/channel/0029VbCB0adKbYMG4akkZO3T">Buy Now</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card" data-item="Sale">
+                <img src="images/markets/12.jpg" width="600px">
+                <div class="content">
+                    <h4>Mid ID Available</h4>
+                    <div class="progress-line-4"><span></span></div>
+                    <div class="info">
+                        <p>Pricing:<br><span>Ghc 250.00</span></p>
+                        <a href="https://whatsapp.com/channel/0029VbCB0adKbYMG4akkZO3T">Buy Now</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card" data-item="Sale">
+                <img src="images/markets/15.jpg" width="600px">
+                <div class="content">
+                    <h4>Beast ID Available</h4>
+                    <div class="progress-line-4"><span></span></div>
+                    <div class="info">
+                        <p>Pricing:<br><span>Ghc 560.00</span></p>
+                        <a href="https://whatsapp.com/channel/0029VbCB0adKbYMG4akkZO3T">Buy Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--Markets-3-->
+
+    <div class="accounts" id="market">
         <div class="cardBx">
             
             <div class="card" data-item="Swap">
