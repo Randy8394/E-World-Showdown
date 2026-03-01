@@ -292,7 +292,7 @@ header .action .searchBx input{
 .tournaments .boxBx .box{
     width: 350px;
     border-radius: 10px;
-    margin: 20px 40px;
+    margin: 20px 20px;
     background: #ffd700;
     overflow: hidden;
 }
@@ -1156,7 +1156,6 @@ footer .info p {
         font-size: 1.4rem;
     }
 
-    
 header .logo{
     position: relative;
     color: #000080;
@@ -1282,7 +1281,7 @@ header .logo{
     .accounts .cardBx .card,
     .tournaments .boxBx .box{
         width: 100%;
-        margin: 10px 0;
+        margin: 10px 2px;
     }
 
     .accounts .cardBx .card{
