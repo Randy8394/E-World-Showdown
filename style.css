@@ -103,34 +103,19 @@ header ul li a{
     border-radius: 5px;
 }
 
-header ul li a:hover{
+
+/* Scrollbar styling for ecl-scroll: match the site's global scrollbar */
+.ecl-scroll::-webkit-scrollbar {
+    height: 12px;
+}
+.ecl-scroll::-webkit-scrollbar-thumb {
     background: #cd7f32;
-    color: black;
-    box-shadow: 0 0 10px #cd7f32;
+    border-radius: 6px;
+}
+.ecl-scroll {
+    /* no additional overrides so it matches the global scrollbar appearance */
 }
 
-header .action .searchBx{
-    padding: 5px;
-    margin: 5px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: #fff;
-    border-radius: 5px;
-}
-
-header .action .searchBx i{
-    font: 1.4rem;
-    margin: 5px;
-    color: #222;
-}
-
-header .action .searchBx input{
-    outline: none;
-    border: none;
-    font-size: 1em;
-    color: #222;
-}
 
 /*Home banner*/
 
@@ -285,14 +270,25 @@ header .action .searchBx input{
     width: 100%;
     min-height: 100%;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
+    /* allow horizontal scrolling instead of wrapping */
+    overflow-x: auto;
+    overflow-y: hidden;
+    scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch;
+    gap: 20px;
+    padding: 20px 0;
+    scroll-snap-type: x mandatory;
+}
+/* make each card a fixed-width flex item so they line up horizontally */
+.tournaments .boxBx .box{
+    flex: 0 0 auto;
+    margin: 0 10px;
+    scroll-snap-align: start;
 }
 .tournaments .boxBx .box{
     width: 350px;
     border-radius: 10px;
-    margin: 20px 20px;
+    /* margin now handled by flex spacing */
     background: #ffd700;
     overflow: hidden;
 }
@@ -413,37 +409,72 @@ justify-content: space-between;
     height: 100%;
 }
 
-/* Champions League Showdown Horizontal Scroll on Small Screens */
+/* Champions League Showdown Horizontal Scroll */
 .ecl-scroll {
     display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
-    width: 100%;
-}
-
-.ecl-scroll img {
-    width: 100%;
-    height: auto;
-}
-
-/* Calendar horizontal scroller */
-.calendar-scroll{
-    display: flex;
+    /* always line up horizontally */
+    flex-wrap: nowrap;
     gap: 10px;
     width: 100%;
     overflow-x: auto;
     overflow-y: hidden;
     scroll-behavior: smooth;
     -webkit-overflow-scrolling: touch;
+    scroll-snap-type: x mandatory;
+}
+
+.ecl-scroll img {
+    flex: 0 0 auto;
+    width: 100%;
+    height: auto;
+    scroll-snap-align: start;
+}
+
+/* Calendar horizontal scroller */
+/* Calendar horizontal scroller */
+.col-0.calendar-scroll {
+    /* allow calendar column to take more horizontal space */
+    flex-basis: 60%;
+    min-width: 360px;
+}
+.calendar-scroll{
+    display: flex;
+    gap: 16px;
+    width: 100%;
+    overflow-x: auto;
+    overflow-y: hidden;
+    scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch;
     flex-wrap: nowrap;
+    align-items: center;
+    padding: 12px 0;
+    scroll-snap-type: x mandatory;
 }
 
 .calendar-scroll img{
-    flex: 0 0 auto;
-    max-width: 100%;
+    flex: 0 0 360px;
+    width: 360px;
+    max-width: 360px;
     height: auto;
-    object-fit: contain;
+    object-fit: cover;
     flex-shrink: 0;
+    border-radius: 8px;
+    scroll-snap-align: start;
+}
+
+/* Responsive: make calendar images take most of the viewport on small screens */
+@media (max-width: 768px) {
+    .col-0.calendar-scroll {
+        flex-basis: 100%;
+        min-width: 100%;
+        margin-bottom: 16px;
+    }
+    .calendar-scroll img{
+        flex: 0 0 90vw;
+        width: 90vw;
+        max-width: 90vw;
+        height: auto;
+    }
 }
 
 @media (max-width: 768px) {
@@ -453,13 +484,7 @@ justify-content: space-between;
     }
     
     .ecl-scroll {
-        flex-wrap: nowrap;
-        overflow-x: auto;
-        overflow-y: hidden;
-        scroll-behavior: smooth;
-        gap: 10px;
-        width: 100%;
-        -webkit-overflow-scrolling: touch;
+        /* already configured above; media query retains same rules */
     }
     
     .ecl-scroll img {
@@ -1164,13 +1189,43 @@ header .logo{
     font-weight: 1000;
 }
 
+/* Scrollbar styling for ecl-scroll */
+.ecl-scroll::-webkit-scrollbar {
+    height: 12px;
+}
+.ecl-scroll::-webkit-scrollbar-track {
+    background: rgba(255,255,255,0.3);
+}
+.ecl-scroll::-webkit-scrollbar-thumb {
+    background: #cd7f32;
+    border-radius: 6px;
+}
+/* Always show scrollbar track/thumb for ecl-scroll, and provide contrasting color */
+.ecl-scroll {
+    scrollbar-width: auto;
+    scrollbar-color: #cd7f32 rgba(255,255,255,0.3);
+    overflow-x: auto; /* ensure scrollbar appears even when not actively scrolling */
+}
+
+/* Make league-scroll scrollbar smaller than the global scrollbar */
+.league-scroll::-webkit-scrollbar {
+    height: 6px;
+}
+.league-scroll::-webkit-scrollbar-thumb {
+    background: #cd7f32;
+    border-radius: 3px;
+}
+.league-scroll {
+    scrollbar-width: thin; /* Firefox: renders thinner */
+    scrollbar-color: #cd7f32 transparent;
+}
+
 /* Hide horizontal scrollbar visually on very small screens but keep scroll enabled */
 @media (max-width: 500px) {
     .cardBx,
     .accounts .cardBx,
     .accounts-2-3 .cardBx,
-    .league-scroll,
-    .ecl-scroll {
+    .league-scroll {
         -ms-overflow-style: none; /* IE and Edge */
         scrollbar-width: none; /* Firefox */
     }
@@ -1178,8 +1233,7 @@ header .logo{
     .cardBx::-webkit-scrollbar,
     .accounts .cardBx::-webkit-scrollbar,
     .accounts-2-3 .cardBx::-webkit-scrollbar,
-    .league-scroll::-webkit-scrollbar,
-    .ecl-scroll::-webkit-scrollbar {
+    .league-scroll::-webkit-scrollbar {
         display: none; /* Safari and Chrome */
         height: 0;
     }
