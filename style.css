@@ -57,7 +57,7 @@ header {
     top: 0;
     left: 0;
     width: 100%;
-    padding: 7px 80px;
+    padding: 7px 40px; /* narrower so title can sit centered */
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -90,11 +90,14 @@ header .logo{
 }
 
 header h2{
-    position: relative;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
     text-align: center;
     font-weight: 1rem;
     color: #000080;
     transition: 0.5s;
+    pointer-events: none; /* clicks pass through to underlying elements */
 }
 
 header .nav{
@@ -1116,27 +1119,58 @@ footer .info p {
         color: #ffd700;
     }
 
-    .toggleMenu{
-        position: relative;
-        width: 30px;
-        height: 30px;
-        background: url(images/menu.png);
-        background-position: center;
-        background-size: 45px;
-        background-repeat: no-repeat;
+    .toggleMenu {
+        position: fixed;
+        top: 15px;
+        right: 20px;
+        width: 36px;
+        height: 36px;
         cursor: pointer;
         z-index: 10001;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        padding: 6px;
+        background: rgba(255,255,255,0.2);
+        border-radius: 6px;
+        transform: rotate(-45deg);
+        transition: transform 0.3s ease, background 0.3s ease;
     }
 
-    /* when the toggle element itself has .active, switch the background */
-    .toggleMenu.active{
-        width: 15px;
-        margin-right: 7px;
-        height: 15px;
-        background: url(images/close.png);
-        background-position: center;
-        background-size: 30px;
-        background-repeat: no-repeat;
+    .toggleMenu:hover {
+        transform: rotate(-45deg) scale(1.1);
+        background: rgba(255,255,255,0.4);
+    }
+
+    /* when menu open, straighten and darken */
+    .toggleMenu.active {
+        transform: rotate(0deg) scale(1.1);
+        background: rgba(255,255,255,0.6);
+    }
+
+    .toggleMenu span {
+        display: block;
+        width: 100%;
+        height: 3px;
+        background: #000080;
+        border-radius: 2px;
+        transition: transform 0.3s ease, opacity 0.3s ease;
+        /* counter-rotate so bars appear horizontal despite container angle */
+        transform: rotate(45deg);
+    }
+
+    /* active state animates into an "X" */
+    .toggleMenu.active span:nth-child(1) {
+        /* keep base 45deg rotation, then rotate another 45deg and move down */
+        transform: rotate(45deg) translateY(9px) rotate(45deg);
+    }
+    .toggleMenu.active span:nth-child(2) {
+        opacity: 0;
+    }
+    .toggleMenu.active span:nth-child(3) {
+        /* keep base rotation and rotate -45deg plus upward shift */
+        transform: rotate(45deg) translateY(-9px) rotate(-45deg);
     }
 
     .banner .bg img{
