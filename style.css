@@ -71,6 +71,10 @@ header.sticky{
     box-shadow: 0 5px 20px rgba(75, 74, 20, 0.9);
 }
 
+header.sticky h2{
+    color: #ffd700;
+}
+
 ::-webkit-scrollbar{
     width: 12px;
     height: 12px;
@@ -83,6 +87,14 @@ header.sticky{
 
 header .logo{
     position: relative;
+}
+
+header h2{
+    position: relative;
+    text-align: center;
+    font-weight: 1rem;
+    color: #000080;
+    transition: 0.5s;
 }
 
 header .nav{
@@ -270,7 +282,6 @@ header ul li a{
     width: 100%;
     min-height: 100%;
     display: flex;
-    /* allow horizontal scrolling instead of wrapping */
     overflow-x: auto;
     overflow-y: hidden;
     scroll-behavior: smooth;
@@ -279,7 +290,7 @@ header ul li a{
     padding: 20px 0;
     scroll-snap-type: x mandatory;
 }
-/* make each card a fixed-width flex item so they line up horizontally */
+
 .tournaments .boxBx .box{
     flex: 0 0 auto;
     margin: 0 10px;
@@ -288,7 +299,6 @@ header ul li a{
 .tournaments .boxBx .box{
     width: 350px;
     border-radius: 10px;
-    /* margin now handled by flex spacing */
     background: #ffd700;
     overflow: hidden;
 }
@@ -384,8 +394,8 @@ justify-content: space-between;
 {
     max-width: 1080px;
     margin: auto;
-    padding-left: 25px;
-    padding-right: 25px;
+    padding-left: 5px;
+    padding-right: 5px;
 }
 
 .row
@@ -412,7 +422,6 @@ justify-content: space-between;
 /* Champions League Showdown Horizontal Scroll */
 .ecl-scroll {
     display: flex;
-    /* always line up horizontally */
     flex-wrap: nowrap;
     gap: 10px;
     width: 100%;
@@ -430,10 +439,7 @@ justify-content: space-between;
     scroll-snap-align: start;
 }
 
-/* Calendar horizontal scroller */
-/* Calendar horizontal scroller */
 .col-0.calendar-scroll {
-    /* allow calendar column to take more horizontal space */
     flex-basis: 60%;
     min-width: 360px;
 }
@@ -462,7 +468,6 @@ justify-content: space-between;
     scroll-snap-align: start;
 }
 
-/* Responsive: make calendar images take most of the viewport on small screens */
 @media (max-width: 768px) {
     .col-0.calendar-scroll {
         flex-basis: 100%;
