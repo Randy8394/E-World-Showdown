@@ -51,7 +51,6 @@ body{
     display: block;
 }
 
-/* Ensure header and all content sit above video */
 header {
     position: fixed;
     top: 0;
@@ -97,7 +96,7 @@ header h2{
     font-weight: 1rem;
     color: #000080;
     transition: 0.5s;
-    pointer-events: none; /* clicks pass through to underlying elements */
+    pointer-events: none;
 }
 
 header .nav{
@@ -119,16 +118,9 @@ header ul li a{
 }
 
 
-/* Scrollbar styling for ecl-scroll: match the site's global scrollbar */
-.ecl-scroll::-webkit-scrollbar {
-    height: 12px;
-}
 .ecl-scroll::-webkit-scrollbar-thumb {
     background: #cd7f32;
-    border-radius: 6px;
-}
-.ecl-scroll {
-    /* no additional overrides so it matches the global scrollbar appearance */
+    border-radius: 10px;
 }
 
 
@@ -439,7 +431,17 @@ justify-content: space-between;
     flex: 0 0 auto;
     width: 100%;
     height: auto;
-    scroll-snap-align: start;
+    display: flex;
+    gap: 16px;
+    width: 100%;
+    overflow-x: auto;
+    overflow-y: hidden;
+    scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch;
+    flex-wrap: nowrap;
+    align-items: center;
+    padding: 12px 0;
+    scroll-snap-type: x mandatory;
 }
 
 .col-0.calendar-scroll {
@@ -491,9 +493,6 @@ justify-content: space-between;
         min-width: 100%;
     }
     
-    .ecl-scroll {
-        /* already configured above; media query retains same rules */
-    }
     
     .ecl-scroll img {
         width: 100vw;
