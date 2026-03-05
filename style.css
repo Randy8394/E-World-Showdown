@@ -12,11 +12,12 @@ body{
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    background-attachment: fixed;
     position: relative;
     margin-top: 60px;
 }
 
-/* Full-page video background container */
+
 .video-background {
     position: fixed;
     top: 0;
