@@ -199,7 +199,7 @@
     </div>
 
 
-<!--Hall OF Fame-1-->
+    <!--Hall OF Fame-->
 
     <div class="Hall-Of-Fame animeX" id="Hall Of Fame">
         <h2>HALL OF FAME</h2>
@@ -208,7 +208,18 @@
             <li class="list" data-filter = "individual">Individual</li>
             <li class="list" data-filter = "clan">Clan</li>
         </ul>
-        <div class="cardBx">
+        
+        <!-- Slideshow Controls -->
+        <div class="slideshow-container">
+            <button class="slide-btn slide-prev" onclick="changeCard(-1)">
+                <i class='bx bxs-chevron-left'></i>
+            </button>
+            <button class="slide-btn slide-next" onclick="changeCard(1)">
+                <i class='bx bxs-chevron-right'></i>
+            </button>
+        </div>
+        
+        <div class="cardBx" id="hallOfFameCarousel">
             
             <div class="card" data-item="clan">
                 <img src="images/Hall Of Fame/Super League Gamers.jpg" width="600px">
@@ -453,12 +464,10 @@
         </div>
     </div>
 
-    <!--Hall of Fame-2-->
-
     <div class="Hall-Of-Fame animeX market-section">
-        <div class="cardBx">
-            <div class="card" data-item="clan">
-                <img src="images/Hall Of Fame/Wicked Souls.png" width="600px">
+        
+    <div class="cardBx">
+        <div class="card" data-item="clan">                <img src="images/Hall Of Fame/Wicked Souls.png" width="600px">
                 <div class="content">
                     <h4>E-World ECL JUNE 2025</h4>
                     <div class="progress-line-4"><span></span></div>
@@ -680,12 +689,9 @@
         </div>
     </div>
 
-    <!--Hall Of Fame-3-->
-
-    <div class="Hall-Of-Fame animeX market-section">
-        <div class="cardBx">
-            <div class="card" data-item="clan">
-                <img src="images/Hall Of Fame/ShSt.jpg" width="600px">
+    <div class="cardBx">
+        <div class="card" data-item="clan">
+            <img src="images/Hall Of Fame/ShSt.jpg" width="600px">
                 <div class="content">
                     <h4>E-World ECL XMAS 2024</h4>
                     <div class="progress-line-4"><span></span></div>
@@ -928,10 +934,11 @@
     </div>
 
 
-<!--Contact Us-->
+    <!--Contact-->
 
 <section class="contact animeX" id="contact">
-        <div class="contact-container">
+        
+    <div class="contact-container">
             <h1>Get In <span>Touch</span></h1>
             <h3>Let's Work Together!</h3>
             
