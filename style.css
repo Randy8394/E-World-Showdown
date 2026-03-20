@@ -542,7 +542,6 @@ justify-content: space-between;
     }
 }
 
-/* E-World League Cup Horizontal Scroll on Small Screens */
 .league-container {
     display: flex;
     flex-wrap: wrap;
@@ -568,9 +567,9 @@ justify-content: space-between;
 }
 
 
-/* Market */
+/* Hall Of Fame */
 
-.accounts{
+.Hall-Of-Fame{
     padding: 0 100px;
     width: 100%;
     min-height: auto;
@@ -585,8 +584,7 @@ justify-content: space-between;
     z-index: 10;
 }
 
-/* Exact zero spacing for secondary market blocks */
-.accounts-2-3{
+.Hall-Of-Fame-2-3{
     padding: 0 100px;
     width: 100%;
     min-height: auto;
@@ -601,18 +599,17 @@ justify-content: space-between;
     z-index: 10;
 }
 
-/* Remove heading margin inside market blocks */
-.accounts h2,
-.accounts-2-3 h2 {
+.Hall-Of-Fame h2,
+.Hall-Of-Fame-2-3 h2 {
     margin: 0;
 }
 
-.accounts h2{
+.Hall-Of-Fame h2{
     color: #cd7f32;
     margin: 10px 0;
 }
 
-.accounts ul{
+.Hall-Of-Fame ul{
     display: flex;
     justify-content: flex-start;
     align-items: center;
@@ -626,7 +623,7 @@ justify-content: space-between;
     scroll-behavior: smooth;
 }
 
-.accounts ul li{
+.Hall-Of-Fame ul li{
     list-style: none;
     padding: 10px 20px;
     border-radius: 5px;
@@ -638,13 +635,13 @@ justify-content: space-between;
     flex-shrink: 0;
 }
 
-.accounts ul li.active{
+.Hall-Of-Fame ul li.active{
     background: #ffd700;
     color: #000;
     box-shadow: 0 0 10px #ffd700;
 }
 
-.accounts .cardBx{
+.Hall-Of-Fame .cardBx{
     width: 100%;
     display: flex;
     justify-content: flex-start;
@@ -656,7 +653,7 @@ justify-content: space-between;
     gap: 20px;
 }
 
-.accounts .cardBx .card{
+.Hall-Of-Fame .cardBx .card{
     width: 600px;
     flex-shrink: 0;
     border-radius: 10px;
@@ -665,13 +662,13 @@ justify-content: space-between;
     overflow: hidden;
 }
 
-.accounts .cardBx .card img{
+.Hall-Of-Fame .cardBx .card img{
     width: 100%;
     height: 250px;
     object-fit: cover;
 }
 
-.accounts .cardBx .card .content h4{
+.Hall-Of-Fame .cardBx .card .content h4{
     color: #000;
     margin: 15px 0;
     padding: 10px;
@@ -680,7 +677,7 @@ justify-content: space-between;
 
 
 /*Progress Line 1*/
-.accounts .cardBx .card .progress-line-1 {
+.Hall-Of-Fame .cardBx .card .progress-line-1 {
     position: relative;
     height: 10px;
     width: 90%;
@@ -693,7 +690,7 @@ justify-content: space-between;
     animation: animate 1s cubic-bezier(1,0,0.5,1) forwards;
 }
 
-.accounts .cardBx .card .progress-line-1 span{
+.Hall-Of-Fame .cardBx .card .progress-line-1 span{
     position: absolute;
     height: 100%;
     width: 95%;
@@ -706,7 +703,7 @@ justify-content: space-between;
 }
 
 /*Progress Line 2*/
-.accounts .cardBx .card .progress-line-2 {
+.Hall-Of-Fame .cardBx .card .progress-line-2 {
     position: relative;
     height: 10px;
     width: 90%;
@@ -719,7 +716,7 @@ justify-content: space-between;
     animation: animate 1s cubic-bezier(1,0,0.5,1) forwards;
 }
 
-.accounts .cardBx .card .progress-line-2 span{
+.Hall-Of-Fame .cardBx .card .progress-line-2 span{
     position: absolute;
     height: 100%;
     width: 70%;
@@ -732,7 +729,7 @@ justify-content: space-between;
 }
 
 /*Progress Line 3*/
-.accounts .cardBx .card .progress-line-3 {
+.Hall-Of-Fame .cardBx .card .progress-line-3 {
     position: relative;
     height: 10px;
     width: 90%;
@@ -745,7 +742,7 @@ justify-content: space-between;
     animation: animate 1s cubic-bezier(1,0,0.5,1) forwards;
 }
 
-.accounts .cardBx .card .progress-line-3 span{
+.Hall-Of-Fame .cardBx .card .progress-line-3 span{
     position: absolute;
     height: 100%;
     width: 55%;
@@ -758,7 +755,7 @@ justify-content: space-between;
 }
 
 /*Progress Line 4*/
-.accounts .cardBx .card .progress-line-4 {
+.Hall-Of-Fame .cardBx .card .progress-line-4 {
     position: relative;
     height: 10px;
     width: 90%;
@@ -771,7 +768,7 @@ justify-content: space-between;
     animation: animate 1s cubic-bezier(1,0,0.5,1) forwards;
 }
 
-.accounts .cardBx .card .progress-line-4 span{
+.Hall-Of-Fame .cardBx .card .progress-line-4 span{
     position: absolute;
     height: 100%;
     width: 25%;
@@ -790,7 +787,7 @@ justify-content: space-between;
     }
 }
 
-.accounts .cardBx .card .info{
+.Hall-Of-Fame .cardBx .card .info{
     border-top: 2px solid #cd7f32;
     margin-left: 25px;
     margin-right: 25px;
@@ -799,16 +796,16 @@ justify-content: space-between;
     align-items: center;
 }
 
-.accounts .cardBx .card .info p{
+.Hall-Of-Fame .cardBx .card .info p{
     font-size: 1rem;
     color: #000;
 }
 
-.accounts .cardBx .card .info p span{
+.Hall-Of-Fame .cardBx .card .info p span{
     color: #000;
 }
 
-.accounts .cardBx .card .info a{
+.Hall-Of-Fame .cardBx .card .info a{
     display: inline-block;
     padding: 10px 20px;
     border: 1px solid #000080;
@@ -821,7 +818,7 @@ justify-content: space-between;
     margin-left: 60%;
 }
 
-.accounts .cardBx .card .info a:hover{
+.Hall-Of-Fame .cardBx .card .info a:hover{
     background: #000080;
     border: none;
     color: #ffd700;
@@ -1262,37 +1259,37 @@ header .logo{
 /* Hide horizontal scrollbar visually on very small screens but keep scroll enabled */
 @media (max-width: 500px) {
     .cardBx,
-    .accounts .cardBx,
-    .accounts-2-3 .cardBx,
+    .Hall-Of-Fame .cardBx,
+    .Hall-Of-Fame-2-3 .cardBx,
     .league-scroll {
         -ms-overflow-style: none; /* IE and Edge */
         scrollbar-width: none; /* Firefox */
     }
 
     .cardBx::-webkit-scrollbar,
-    .accounts .cardBx::-webkit-scrollbar,
-    .accounts-2-3 .cardBx::-webkit-scrollbar,
+    .Hall-Of-Fame .cardBx::-webkit-scrollbar,
+    .Hall-Of-Fame-2-3 .cardBx::-webkit-scrollbar,
     .league-scroll::-webkit-scrollbar {
         display: none; /* Safari and Chrome */
         height: 0;
     }
 
     /* Remove vertical gaps inside market sections */
-    .accounts .cardBx,
-    .accounts-2-3 .cardBx,
+    .Hall-Of-Fame .cardBx,
+    .Hall-Of-Fame-2-3 .cardBx,
     .cardBx {
         padding-top: 0 !important;
         padding-bottom: 0 !important;
     }
 
-    .accounts .cardBx .card,
-    .accounts-2-3 .cardBx .card,
+    .Hall-Of-Fame .cardBx .card,
+    .Hall-Of-Fame-2-3 .cardBx .card,
     .cardBx .card {
         margin: 0 !important;
     }
 
-    .accounts ul,
-    .accounts-2-3 ul {
+    .Hall-Of-Fame ul,
+    .Hall-Of-Fame-2-3 ul {
         margin-bottom: 0 !important;
     }
 }
@@ -1335,20 +1332,20 @@ header .logo{
     }
 
     /* General section padding reductions */
-    .about, .accounts, .tournaments, .contact, footer{
+    .about, .Hall-Of-Fame, .tournaments, .contact, footer{
         padding: 12px;
     }
 
     /* Force zero vertical spacing for market sections on very small screens */
-    .accounts,
-    .accounts-2-3 {
+    .Hall-Of-Fame,
+    .Hall-Of-Fame-2-3 {
         margin: 0 !important;
         padding-top: 0 !important;
         padding-bottom: 0 !important;
     }
 
-    .accounts h2,
-    .accounts-2-3 h2 {
+    .Hall-Of-Fame h2,
+    .Hall-Of-Fame-2-3 h2 {
         margin: 0 !important;
         padding: 0 !important;
     }
@@ -1356,40 +1353,40 @@ header .logo{
 
 /* Also ensure small tablets/phones keep markets tightly stacked */
 @media (max-width: 768px) {
-    .accounts,
-    .accounts-2-3 {
+    .Hall-Of-Fame,
+    .Hall-Of-Fame-2-3 {
         margin: 0 !important;
         padding-top: 0 !important;
         padding-bottom: 0 !important;
     }
 
-    .accounts h2,
-    .accounts-2-3 h2 {
+    .Hall-Of-Fame h2,
+    .Hall-Of-Fame-2-3 h2 {
         margin: 0 !important;
         padding: 0 !important;
     }
 }
     /* Cards and boxes become full width and stack */
     .about .contentBx,
-    .accounts .cardBx .card,
+    .Hall-Of-Fame .cardBx .card,
     .tournaments .boxBx .box{
         width: 100%;
         margin: 10px 2px;
     }
 
-    .accounts .cardBx .card{
+    .Hall-Of-Fame .cardBx .card{
         border-radius: 8px;
         margin: 10px 0;
     }
 
-    .accounts .cardBx .card img,
+    .Hall-Of-Fame .cardBx .card img,
     .tournaments .boxBx .box img{
         height: auto;
         max-height: 220px;
         width: 100%;
     }
 
-    .accounts ul{
+    .Hall-Of-Fame ul{
         gap: 6px;
         flex-wrap: wrap;
     }
