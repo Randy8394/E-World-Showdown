@@ -119,7 +119,7 @@ header ul li a{
 }
 
 
-.ecl-scroll::-webkit-scrollbar-thumb {
+.league-scroll::-webkit-scrollbar-thumb {
     background: #cd7f32;
     border-radius: 10px;
 }
@@ -416,7 +416,7 @@ justify-content: space-between;
 }
 
 /* Champions League Showdown Horizontal Scroll */
-.ecl-scroll {
+.league-scroll {
     display: flex;
     flex-wrap: nowrap;
     gap: 16px;
@@ -430,7 +430,7 @@ justify-content: space-between;
     scroll-snap-type: x mandatory;
 }
 
-.ecl-scroll img {
+.league-scroll img {
     flex: 0 0 360px;
     width: 360px;
     max-width: 360px;
@@ -484,13 +484,13 @@ justify-content: space-between;
 }
 
 @media (max-width: 768px) {
-    .col-0:has(.ecl-scroll) {
+    .col-0:has(.league-scroll) {
         flex-basis: 100%;
         min-width: 100%;
     }
     
     
-    .ecl-scroll img {
+    .league-scroll img {
         width: 100vw;
         max-width: 100vw;
         min-width: 100vw;
@@ -524,16 +524,21 @@ justify-content: space-between;
     
     .league-scroll {
         display: flex;
-        flex-wrap: wrap;
+        flex-wrap: nowrap;
         scroll-behavior: smooth;
         gap: 10px;
         width: 100%;
+        overflow-x: auto;
+        overflow-y: hidden;
     }
     
     .league-scroll img {
-        width: 100%;
+        width: auto;
+        max-width: 320px;
+        min-width: 220px;
         height: auto;
         flex-shrink: 0;
+        white-space: nowrap;
     }
 }
 
@@ -561,11 +566,34 @@ justify-content: space-between;
     object-fit: contain;
 }
 
+/* Force league-scroll items to stay horizontal */
+.league-scroll {
+    display: flex !important;
+    flex-direction: row !important;
+    flex-wrap: nowrap !important;
+    align-items: center !important;
+    justify-content: flex-start !important;
+    overflow-x: scroll !important;
+    overflow-y: hidden !important;
+    gap: 10px !important;
+    white-space: nowrap !important;
+    scroll-snap-type: x mandatory !important;
+    -webkit-overflow-scrolling: touch !important;
+    padding-bottom: 10px !important;
+}
 
-/* Hall Of Fame */
+.league-scroll > * {
+    flex: 0 0 auto !important;
+}
 
-.Hall-Of-Fame{
-    padding: 0 100px;
+.league-scroll img {
+    flex: 0 0 auto !important;
+    display: inline-block !important;
+    width: auto !important;
+    max-width: 320px !important;
+    min-width: 220px !important;
+    height: auto !important;
+        white-space: nowrap !important;
     width: 100%;
     min-height: auto;
     display: flex;
@@ -1482,19 +1510,19 @@ header .logo{
     font-weight: 1000;
 }
 
-/* Scrollbar styling for ecl-scroll */
-.ecl-scroll::-webkit-scrollbar {
+/* Scrollbar styling for league-scroll */
+.league-scroll::-webkit-scrollbar {
     height: 12px;
 }
-.ecl-scroll::-webkit-scrollbar-track {
+.league-scroll::-webkit-scrollbar-track {
     background: rgba(255,255,255,0.3);
 }
-.ecl-scroll::-webkit-scrollbar-thumb {
+.league-scroll::-webkit-scrollbar-thumb {
     background: #cd7f32;
     border-radius: 6px;
 }
-/* Always show scrollbar track/thumb for ecl-scroll, and provide contrasting color */
-.ecl-scroll {
+/* Always show scrollbar track/thumb for league-scroll, and provide contrasting color */
+.league-scroll {
     scrollbar-width: auto;
     scrollbar-color: #cd7f32 rgba(255,255,255,0.3);
     overflow-x: auto; /* ensure scrollbar appears even when not actively scrolling */
@@ -1682,3 +1710,4 @@ header .logo{
         transform: translateY(0);
     }
 }
+
